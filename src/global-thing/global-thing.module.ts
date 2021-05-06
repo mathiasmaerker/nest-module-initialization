@@ -6,5 +6,6 @@ import { GlobalThingService } from './global-thing.service';
 @Module({
   imports: [LongRunningModule],
   providers: [GlobalThingService],
+  exports: [GlobalThingService],
 })
 export class GlobalThingModule {}
